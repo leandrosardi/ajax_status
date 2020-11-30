@@ -1,0 +1,8 @@
+div.ajax_status_conteiner {
+	position: relative;
+}
+
+div.ajax_status_badge {
+	position:absolute;top:0;left:0;
+	visibility: hidden;
+}
