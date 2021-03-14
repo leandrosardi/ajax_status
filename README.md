@@ -27,24 +27,11 @@ All these files are included in this project. You can download them from this pa
 
 ```html
 <div id='myAjaxForm1' class="ajax_status_conteiner span3 box"> </div>
-<div id='myAjaxForm2' class="ajax_status_conteiner span3 box"> </div>
-<div id='myAjaxForm3' class="ajax_status_conteiner span3 box"> </div>
-<div id='myAjaxForm4' class="ajax_status_conteiner span3 box"> </div>
 <script>
 	ctx1 = $('#myAjaxForm1'); // it will remain hidden
-	ctx2 = $('#myAjaxForm2'); // it will show saving... message
-	ctx3 = $('#myAjaxForm3'); // it will show success message
-	ctx4 = $('#myAjaxForm4'); // it will show success message
 
 	$(document).ready(function() {
 		ajaxStatus.draw( ctx1 ) ;
-		ajaxStatus.draw( ctx2 ) ;
-		ajaxStatus.draw( ctx3 ) ;
-		ajaxStatus.draw( ctx4 ) ;
-
-		ajaxStatus.switchToSaving( ctx2 ) ;
-		ajaxStatus.switchToSuccess( ctx3 ) ;
-		ajaxStatus.switchToError( ctx4 ) ;
 	});
 </script>
 ```
@@ -55,16 +42,16 @@ Here are listed each one of the features provided by **Ajax_Status**.
 ## ajaxStatus.version()
 Returns the version of this **Ajax_Status** library.
 
-## hide(ctx) {
+## hide() {
 Hides the widget.
 
-## switchToSaving(ctx) {
+## switchToSaving() {
 Shows and turns on the blue saving message.
 
-## switchToSuccess(ctx) {
+## switchToSuccess() {
 Shows and turns on the green success message.
 
-## switchToError(ctx) {
+## switchToError() {
 Shows and turns on the red error message.
 
 # Deployment 
